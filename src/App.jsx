@@ -6,7 +6,6 @@ class App extends Component {
       <div>
         <header>Ecommerce</header>
         { this.props.children }
-        
         <footer>&copy; 2017</footer>
       </div>
     )
