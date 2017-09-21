@@ -4,7 +4,9 @@
   "description": "Ecommerce app React / Redux",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server -w"
+    "dev": "NODE_ENV=development webpack-dev-server -w",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js -p",
+    "serve": "NODE_ENV=production webpack-dev-server --config webpack.config.prod.js"
   },
   "author": "Rafael Melón",
   "license": "MIT",
