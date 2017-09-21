@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
+import uuid from 'uuid';
+
 import Product from './Product';
 
 const ProductList = ({
@@ -12,9 +14,9 @@ const ProductList = ({
       {
         products.map(product => (
           <Product
-            key={ product._id }
-            onAddItem={ onAddItem }
-            { ...product }
+            key={uuid.v4()}
+            onAddItem={onAddItem}
+            {...product}
           />
         ))
       }
@@ -28,4 +30,4 @@ ProductList.propTypes = {
   onAddItem: PropTypes.func.isRequired
 };
 
-export default ProductList
+export default ProductList;
