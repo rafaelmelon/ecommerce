@@ -1,8 +1,14 @@
 {
-  "name": "app",
+  "name": "ecommerce",
   "version": "1.0.0",
-  "description": "Ecommerce app React / Redux",
+  "description": "T-shirt ecommerce with shopping cart",
   "main": "index.js",
+  "author": "Rafael Melón <info@rafaelmelon.es> (http://rafaelmelon.es/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rafaelmelon/ecommerce.git"
+  },
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server -w",
     "build": "NODE_ENV=production webpack --config webpack.config.prod.js -p",
